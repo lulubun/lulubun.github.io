@@ -57,11 +57,11 @@ hr.star-light:after {
   color: white;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: #F55174;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #F55174;
 }
 .img-centered {
   margin: 0 auto;
@@ -529,9 +529,8 @@ div#maincontent {
 }
 
 .ofIcons {
-  display: inline-flex;
-  align-items: center;
-  margin-left: 7%;
+  display: flex;
+  margin-left: 8.5%;
 }
 
 .container {
@@ -542,4 +541,12 @@ div#maincontent {
 
 .caption-content.networker_cap {
   text-align: left;
+}
+
+.redTxt {
+  color: #F55174;
+}
+
+.facePic {
+  border: 2px solid white;
 }
