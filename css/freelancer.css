@@ -193,8 +193,7 @@ section.success {
   }
 }
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
-  right: 0;
+
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -529,8 +528,7 @@ div#maincontent {
 }
 
 .ofIcons {
-  display: flex;
-  margin-left: 8.5%;
+
 }
 
 .container {
