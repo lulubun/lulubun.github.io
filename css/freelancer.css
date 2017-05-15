@@ -539,8 +539,9 @@ div#maincontent {
   margin-right: auto;
 }
 
-.caption-content.networker_cap {
-  text-align: left;
+.networker_cap {
+  display: inline-flex;
+
 }
 
 .redTxt {
