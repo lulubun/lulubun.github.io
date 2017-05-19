@@ -254,9 +254,13 @@ section.success {
 #portfolio * {
   z-index: 2;
 }
-@media (min-width: 767px) {
+@media (max-width: 1039px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
+  }
+
+  #portfolio .portfolio-item .portfolio-link .caption {
+    display: none;
   }
 }
 .floating-label-form-group {
