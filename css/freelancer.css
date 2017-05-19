@@ -207,7 +207,7 @@ section.success {
   position: absolute;
   margin: auto;
   text-align: center;
-  width: 100%;
+  width: 43%;
   height: 100%;
   opacity: 0;
   transition: all ease 0.5s;
@@ -229,10 +229,24 @@ section.success {
   padding-left: 15px;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
-  margin-top: -12px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  margin: auto;
+  position: relative;
 }
+
+.tea {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.art {
+  margin-left: 5px;
+}
+
+.network {
+  margin-left: -7px;
+}
+
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
 #portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
@@ -541,11 +555,6 @@ div#maincontent {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.networker_cap {
-  display: inline-flex;
-
 }
 
 .redTxt {
