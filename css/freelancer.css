@@ -329,6 +329,11 @@ footer .footer-below {
   padding: 25px 0;
   background-color: #233140;
 }
+
+.btn-default {
+  background: #18BC9C;
+  color: white;
+}
 .btn-outline {
   color: white;
   font-size: 20px;
@@ -551,8 +556,12 @@ div#maincontent {
   border-radius: 50%;
 }
 
-.ofIcons {
+.modalImage {
+  max-width: 500px;
+}
 
+.devicon {
+  min-width: 30px !important;
 }
 
 .container {
@@ -567,4 +576,15 @@ div#maincontent {
 
 .facePic {
   border: 2px solid white;
+}
+
+.skilsList {
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.aboutTxt {
+  text-align: justify;
 }

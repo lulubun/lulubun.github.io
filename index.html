@@ -28,6 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
 
 </head>
 
@@ -94,7 +95,7 @@
             </div>
             <div class="row ofIcons">
                 <div class="col-sm-3 portfolio-item">
-                    <a href="https://workday-weather.herokuapp.com/" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content weather">
                                 <i>Workday Weather</i>
@@ -104,7 +105,7 @@
                     </a>
                 </div>
                 <div class="col-sm-3 portfolio-item">
-                    <a href="https://tealog.herokuapp.com/" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content tea">
                                 <i>Tealog</i>
@@ -114,7 +115,7 @@
                     </a>
                 </div>
                 <div class="col-sm-3  portfolio-item">
-                    <a href="https://lulubun.github.io/ArtMap/" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content art">
                                 <i>Art Map</i>
@@ -124,7 +125,7 @@
                     </a>
                 </div>
                 <div class="col-sm-3 portfolio-item">
-                    <a href="https://be-a-networker.herokuapp.com/" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content network">
                                 <i class="networker_cap">Networker</i>
@@ -147,12 +148,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
+                <div class="col-lg-4 col-lg-offset-2 aboutTxt">
                     <p>I bring a background in sales, marketing, and customer service with me to my new role as a web developer. My tech stack includes HTML, CSS, JavaScript, jQuery, Node.js, and React.js</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 aboutTxt">
                     <p>After completing the Full-Stack Web Developer Bootcamp at <a class="notgreen" href="https://www.thinkful.com/">Thinkful</a> I'm ready to enter the work force and become a valuable member of a development team.</p>
                 </div>
+            </div>
+            <div class="row">
+              <div class="skilsList">
+                <i class="devicon devicon-nodejs-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon-sourcetree-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-mongodb-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-react-original-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-javascript-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+                <i class="devicon-gimp-plain colored" style="font-size: 4em; padding-right: 10px; padding-left: 10px;"></i>
+              </div>
             </div>
         </div>
     </section>
@@ -265,21 +281,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2><a href="https://http://workday-weather.herokuapp.com/">Workday Weather</a></h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <a href="https://http://workday-weather.herokuapp.com/"><img src="img/portfolio/responsive_weather.png" class="modalImage img-centered" alt=""></a>
+                            <p>If you check the weather frequently, you are probably aware of how frustrating and bloated the popular weather websites are. I spend a lot of time outside and I like to be prepared. I decided to build this app to make accessing my basic local weather forecast quick and easy (the default city is even my hometown so it’s extra quick for me!). I utilized the Weather Underground API for my information and the Material UI library to make my UI/UX streamlined. </p>
+                            <p>
+                              <i class="devicon devicon-react-original-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                                <li>Capstone:
+                                    <strong>React</strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>March 2017
                                     </strong>
                                 </li>
                             </ul>
@@ -302,21 +320,26 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2><a href="https://tealog.herokuapp.com/">Aficionado: A Tea Log</a></h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <a href="https://tealog.herokuapp.com/"><img src="img/portfolio/responsive_tea.png" class="modalImage img-centered" alt=""></a>
+                            <p>One of the best ways to become an expert on something you enjoy is to journal about your experiences with it to compare and contrast. This is a well known technique for those who wish to become more knowledgeable about wine. I personally don’t care for wine, but I love tea and my original idea for this project was to create a journal that can be customized to record any experience including tea tastings, wine, and beyond. To keep this project to scale in the limited time I had during bootcamp, I focused on making this a digital diary for tea. I hope to scale the project up in the future to help document all types of experience. </p>
+                            <p>
+                              <i class="devicon devicon-nodejs-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-javascript-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-mongodb-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                                <li>Capstone:
+                                    <strong>Server-side Programming</strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>February 2017
                                     </strong>
                                 </li>
                             </ul>
@@ -339,21 +362,23 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2><a href="https://lulubun.github.io/ArtMap/">Art Map</a></h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <a href="https://lulubun.github.io/ArtMap/"><img src="img/portfolio/responsive_artmap.png" class="modalImage img-centered" alt=""></a>
+                            <p>This was my first official capstone project I completed at bootcamp. After a few false starts where I learned more about APIs and what makes them good to work with, I decided to create a map that helps you find local art galleries to visit wherever you happen to be. I used Google Map’s API for geolocation and Google Places to find information about galleries. To add more to this project, I returned recently and updated the project to include available driving directions to each location.</p>
+                            <p>
+                              <i class="devicon devicon-javascript-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
+                                <li>Capstone:
+                                    <strong>Frontend Web Development</strong>
                                 </li>
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    <strong>December 2016
                                     </strong>
                                 </li>
                             </ul>
@@ -364,6 +389,50 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><a href="https://be-a-networker.herokuapp.com/">Networker</a></h2>
+                            <hr class="star-primary">
+                            <a href="https://be-a-networker.herokuapp.com/"><img src="img/portfolio/responsive_network.png" class="modalImage img-centered" alt=""></a>
+                            <p>For my final capstone, I decided to work on a project that could be helpful in my job search. The idea of this is a CRM software app that focuses on networking with contacts. Having one place for contact information, notes about meetings and follow-ups, and sorting and scheduling capabilities help keep your professional network manageable. I’ve included functionality to push followup reminders to a personal calendar. I’ve also implemented secure login functionality. While I currently only have contacts included in this app, I want to add on a job search category that would allow a user to keep their job hunt organized as well.</p>
+                            <p>
+                              <i class="devicon devicon-nodejs-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon-sourcetree-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-mongodb-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-react-original-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-javascript-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Capstone:
+                                    <strong>Frontend Web Development</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>December 2016
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
 
 
     <!-- jQuery -->
