@@ -90,18 +90,7 @@ header .intro-text .skills {
   font-size: 1.25em;
   font-weight: 300;
 }
-@media (min-width: 768px) {
-  header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-  header .intro-text .name {
-    font-size: 4.75em;
-  }
-  header .intro-text .skills {
-    font-size: 1.75em;
-  }
-}
+
 .navbar-custom {
   background: #2C3E50;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -154,6 +143,17 @@ header .intro-text .skills {
   border-color: #18BC9C;
 }
 @media (min-width: 768px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+
   .navbar-custom {
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
@@ -171,6 +171,10 @@ header .intro-text .skills {
   }
   .navbar-custom.affix .navbar-brand {
     font-size: 1.5em;
+  }
+
+  .cellTitle{
+    display: none;
   }
 }
 section {
@@ -190,6 +194,17 @@ section.success {
   }
   section.first {
     padding-top: 75px;
+  }
+  .devicon path{
+    padding-bottom: 10px !important;
+  }
+  .skilsList{
+  }
+  .cellTitle{
+    display: block !important;
+    margin: auto;
+    text-align: center;
+    color: #F55174;
   }
 }
 #portfolio .portfolio-item {
@@ -560,10 +575,6 @@ div#maincontent {
   max-width: 500px;
 }
 
-.devicon {
-  min-width: 30px !important;
-}
-
 .container {
   display: block;
   margin-left: auto;
@@ -587,4 +598,9 @@ div#maincontent {
 
 .aboutTxt {
   text-align: justify;
+  padding-top: 20px;
+}
+
+.cellTitle{
+  display: none;
 }
