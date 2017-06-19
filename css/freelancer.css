@@ -149,7 +149,7 @@ header .intro-text .skills {
   }
 
   .one {
-    padding-left: 35px !important;
+    padding-left: 3% !important;
   }
 
   .three, .four {
@@ -174,11 +174,11 @@ header .intro-text .skills {
 
   .one {
     /*float: left;*/
-    padding-left: 19%;
+    padding-left: 13%;
   }
 
   .three {
-    padding-left: 25%;
+    padding-left: 17%;
     padding-top: 30px;
 
   }
