@@ -143,111 +143,6 @@ header .intro-text .skills {
   border-color: #18BC9C;
 }
 
-@media (min-width: 1200px) {
-  .split {
-    float: left;
-  }
-
-  .one {
-    padding-left: 3% !important;
-  }
-
-  .three, .four {
-    padding-left: 0 !important;
-  }
-}
-@media (min-width: 769px) {
-  header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-  header .intro-text .name {
-    font-size: 4.75em;
-  }
-  header .intro-text .skills {
-    font-size: 1.75em;
-  }
-
-  .split {
-    float: left;
-  }
-
-  .one {
-    /*float: left;*/
-    padding-left: 13%;
-  }
-
-  .three {
-    padding-left: 17%;
-    padding-top: 30px;
-
-  }
-
-  .four {
-    padding-top: 30px;
-  }
-
-
-  .navbar-custom {
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-  }
-  .navbar-custom .navbar-brand {
-    font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .navbar-custom.affix {
-    padding: 10px 0;
-  }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
-  }
-
-  .cellTitle{
-    display: none;
-  }
-}
-section {
-  padding: 100px 0;
-}
-section h2 {
-  margin: 0;
-  font-size: 3em;
-}
-section.success {
-  background: #18BC9C;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  section {
-    padding: 75px 0;
-  }
-  section.first {
-    padding-top: 75px;
-  }
-  .devicon path{
-    padding-bottom: 10px !important;
-  }
-  .modalImage{
-    width: 60%;
-  }
-
-  .two, .three, .four {
-    padding-top: 30px;
-  }
-
-  .cellTitle{
-    display: block !important;
-    margin: auto;
-    text-align: center;
-    color: #F55174;
-  }
-}
 #portfolio .portfolio-item {
 
   margin: auto;
@@ -309,15 +204,7 @@ section.success {
 #portfolio * {
   z-index: 2;
 }
-@media (max-width: 1039px) {
-  #portfolio .portfolio-item {
-    margin: 0 0 30px;
-  }
 
-  #portfolio .portfolio-item .portfolio-link .caption {
-    display: none;
-  }
-}
 .floating-label-form-group {
   position: relative;
   margin-bottom: 0;
@@ -648,4 +535,122 @@ div#maincontent {
 
 .oneLine {
   text-align: center;
+}
+
+
+@media (min-width: 769px) {
+  header .container {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+  header .intro-text .name {
+    font-size: 4.75em;
+  }
+  header .intro-text .skills {
+    font-size: 1.75em;
+  }
+
+  .split {
+    float: left;
+  }
+
+  .one {
+    /*float: left;*/
+    padding-left: 13%;
+  }
+
+  .three {
+    padding-left: 17%;
+    padding-top: 30px;
+
+  }
+
+  .four {
+    padding-top: 30px;
+  }
+
+
+  .navbar-custom {
+    padding: 25px 0;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .navbar-custom.affix {
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+    font-size: 1.5em;
+  }
+
+  .cellTitle{
+    display: none;
+  }
+}
+section {
+  padding: 100px 0;
+}
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+section.success {
+  background: #18BC9C;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 75px 0;
+  }
+  section.first {
+    padding-top: 75px;
+  }
+  .devicon path{
+    padding-bottom: 10px !important;
+  }
+  .modalImage{
+    width: 60%;
+  }
+
+  .two, .three, .four {
+    padding-top: 30px;
+  }
+
+  .cellTitle{
+    display: block !important;
+    margin: auto;
+    text-align: center;
+    color: #F55174;
+  }
+}
+@media (max-width: 1039px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+
+  #portfolio .portfolio-item .portfolio-link .caption {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .split {
+    float: left;
+  }
+
+  .one {
+    padding-left: 3%;
+  }
+
+  .three, .four {
+    padding-left: 0;
+    padding-top: 0;
+  }
 }
