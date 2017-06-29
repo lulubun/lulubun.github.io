@@ -514,7 +514,8 @@ div#maincontent {
 
 .facePic {
   border: 2px solid white;
-  width: 140px;
+  width: 200px;
+  margin-bottom: 60px;
 }
 
 .skilsList {
