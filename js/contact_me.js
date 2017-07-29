@@ -21,30 +21,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "https://api.sendgrid.com/v3/mail/send HTTP/1.1",
+                url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
-                  "personalizations": [
-                    {
-                      "to": [
-                        {
-                          "email": "laurapetitt@gmail.com"
-                        }
-                      ],
-                      "subject": "Portfolio Contact"
-                    }
-                  ],
-                  "from": {
-                    "email": email
-                  },
-                  "content": [
-                    {
-                      "type": "text/plain",
-                      "value": name + phone + message
-                    }
-                  ]
-                }
-                {
                     name: name,
                     phone: phone,
                     email: email,

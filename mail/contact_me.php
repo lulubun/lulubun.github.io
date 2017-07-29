@@ -1,4 +1,7 @@
 <?php
+
+require("path/to/sendgrid-php/sendgrid-php.php");
+
 // Check for empty fields
 if(empty($_POST['name'])  		||
    empty($_POST['email']) 		||
@@ -23,4 +26,18 @@ $headers = "From: laurapetitt@gmail.com\n"; // This is the email address the gen
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 return true;
+
+// If you are not using Composer
+// require("path/to/sendgrid-php/sendgrid-php.php");
+$from = new SendGrid\Email("Example User", $email_address);
+$subject = "Website Contact Form: " $name;
+$to = new SendGrid\Email("Laura Batson", "laurapetitt@gmail.com");
+$content = new SendGrid\Content("text/plain",$name, $email_address, $phone, $message);
+$mail = new SendGrid\Mail($from, $subject, $to, $content);
+$apiKey = getenv('SG.5MlyDspSQU6l8sSy66bMTw.tS66BQlcUL55f1ckL14j8BfKEokrynPEfEdUcDkqO1M');
+$sg = new \SendGrid($apiKey);
+$response = $sg->client->mail()->send()->post($mail);
+echo $response->statusCode();
+print_r($response->headers());
+echo $response->body();
 ?>
