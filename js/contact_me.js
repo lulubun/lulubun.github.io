@@ -9,7 +9,7 @@ $(function() {
             // Prevent spam click and default submit behaviour
             $("#btnSubmit").attr("disabled", true);
             event.preventDefault();
-            
+
             // get values from FORM
             var name = $("input#name").val();
             var email = $("input#email").val();
@@ -21,9 +21,30 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://api.sendgrid.com/v3/mail/send HTTP/1.1",
                 type: "POST",
                 data: {
+                  "personalizations": [
+                    {
+                      "to": [
+                        {
+                          "email": "laurapetitt@gmail.com"
+                        }
+                      ],
+                      "subject": "Portfolio Contact"
+                    }
+                  ],
+                  "from": {
+                    "email": email
+                  },
+                  "content": [
+                    {
+                      "type": "text/plain",
+                      "value": name + phone + message
+                    }
+                  ]
+                }
+                {
                     name: name,
                     phone: phone,
                     email: email,
