@@ -538,6 +538,17 @@ div#maincontent {
   text-align: center;
 }
 
+.makeBig {
+  font-size: 3em; 
+  font-weight: 700;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+a.makeBig:hover{
+  text-decoration: none;
+}
+
 
 @media (min-width: 769px) {
   header .container {
