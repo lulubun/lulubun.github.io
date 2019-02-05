@@ -5,13 +5,15 @@
  */
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
+
 p {
   font-size: 20px;
 }
 p.small {
-  font-size: 16px;
+  font-size: 8px;
+  margin-top: 10px;
 }
 a,
 a:hover,
@@ -57,11 +59,11 @@ hr.star-light:after {
   color: white;
 }
 hr.star-primary {
-  border-color: #2C3E50;
+  border-color: #F0544F;
 }
 hr.star-primary:after {
   background-color: white;
-  color: #2C3E50;
+  color: #F0544F;
 }
 .img-centered {
   margin: 0 auto;
@@ -268,7 +270,7 @@ footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
-  padding: 25px 0;
+  padding: 15px 0;
   background-color: #233140;
 }
 
@@ -487,7 +489,7 @@ div#maincontent {
 
 
 .notgreen {
-  color: white;
+  color: white !important;
 }
 
 .notgreen:hover {
@@ -509,7 +511,7 @@ div#maincontent {
 }
 
 .redTxt {
-  color: #2C3E50;
+  color: #F0544F;
 }
 
 .facePic {
@@ -563,22 +565,25 @@ a.makeBig:hover{
   }
 
   .split {
-    float: left;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    /* float: left; */
   }
 
   .one {
     /*float: left;*/
-    padding-left: 13%;
+    /* padding-left: 13%; */
   }
 
   .three {
-    padding-left: 17%;
-    padding-top: 30px;
+    /* padding-left: 17%;
+    padding-top: 30px; */
 
   }
 
   .four {
-    padding-top: 30px;
+    /* padding-top: 30px; */
   }
 
 
@@ -613,7 +618,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #F0544F;
+  background: #2C3E50;
   color: white;
 }
 
@@ -642,6 +647,15 @@ section.success {
     color: #2C3E50;
   }
 }
+
+.iconsStyle {
+  font-size: 5em !important;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 @media (max-width: 1039px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
@@ -652,17 +666,6 @@ section.success {
   }
 }
 
-@media (min-width: 1200px) {
-  .split {
-    float: left;
-  }
-
-  .one {
-    padding-left: 3%;
-  }
-
-  .three, .four {
-    padding-left: 0;
-    padding-top: 0;
-  }
+.success {
+  padding: 10px 0 15px 0;
 }
