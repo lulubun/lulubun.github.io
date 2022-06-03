@@ -1,89 +1,441 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta name="description" content="Laura Batson's Web Developer Portfolio">
+    <meta name="author" content="Laura Batson">
+    <meta property="og:title" content="Laura Batson - Portfolio"/>
+    <meta property='og:image' content="https://lulubun.github.io/img/facebox.jpg"/>
+    <meta property= "og:description" content="Laura Batson's Web Developer Portfolio"/>
+    <meta property='og:url' content="https://lulubun.github.io/" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.8.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.8.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.8.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <title>Laura Batson Portfolio</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Laura Batson</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">Tech Stack</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive facePic" src="./img/facebox.jpg" alt="laura">
+                    <div class="intro-text">
+                        <h1 class="name">Laura Batson</h1>
+                        <hr class="star-light">
+                        <span class="skills">Professional JavaScript Developer</span>
+                        <div class="row">
+                            <div class="col-lg-4 col-lg-offset-2 aboutTxt">
+                              <p>I graduated from <a class="notgreen" href="https://www.thinkful.com/">Thinkful</a> in 2017 and I’ve been working in React ever since. Coding is fun! It's solving puzzles and challenging your brain to think in new ways. I have found my calling in coding and I love what I'm doing every day!</p>
+                              <p>Jul 2017 - Nov 2018 | Thing Tech | React and React Native </p>
+                              <p>Feb 2019 - Feb 2021 | CNN/Warner Media | React and Node</p>
+                              <p>Dec 2020 - Jun 2021 | SalesVista | React and Node </p>
+                              <p>Jul 2021 - Present  | Mural | React and Node in Typescript</p>
+                            </div>
+                            <div class="col-lg-4 aboutTxt">
+                              <p>I bring a background in sales, marketing, and customer service with me to my role as a developer. I love attending development events and conferences and I'm proud to be a co-director of <a class="notgreen" href="https://www.womenwhocode.com/">Women Who Code</a> Atlanta. You can find me at many of their events and representing them at other local tech meetups.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <!-- About Section -->
+        <section class="success" id="about">
+            <div>
+                <div class="row">
+                  <div class="skilsList split">
+                      <i class="devicon devicon-nodejs-plain iconsStyle" ></i>
+                      <i class="devicon-sourcetree-plain iconsStyle" ></i>
+                      <i class="devicon devicon-mongodb-plain iconsStyle" ></i>
+                      <i class="devicon devicon-heroku-plain iconsStyle" ></i>
+                      <i class="devicon devicon-react-original iconsStyle" ></i>
+                      <i class="devicon devicon-javascript-plain iconsStyle" ></i>
+                      <i class="devicon devicon-jquery-plain iconsStyle" ></i>
+                      <i class="devicon devicon-html5-plain iconsStyle" ></i>
+                      <i class="devicon devicon-css3-plain iconsStyle" ></i>
+                      <i class="devicon devicon-github-plain iconsStyle" ></i>
+                      <i class="devicon devicon-gimp-plain iconsStyle" ></i>
+                      <i class="devicon devicon-vuejs-plain iconsStyle"></i>
+                      <i class="devicon devicon-visualstudio-plain iconsStyle"></i>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="redTxt">Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row ofIcons">
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content weather">
+                                <i>Workday Weather</i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cloudy.png" class="img-responsive icon" alt="cloudy">
+                        <p class="cellTitle">Workday Weather</p>
+                        <p class="oneLine">Quick weather forecast to plan the day</p>
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content tea">
+                                <i>Tealog</i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/003-food.png" class="img-responsive icon" alt="knife/fork">
+                        <p class="cellTitle">Tealog</p>
+                        <p class="oneLine">Chronicle experiences with tea to refine your palate</p>
+                    </a>
+                </div>
+                <div class="col-sm-3  portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content art">
+                              <i>Art Map</i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/001-paint-palette.png" class="img-responsive icon" alt="palette">
+                        <p class="cellTitle">Art Map</p>
+                        <p class="oneLine">Find local art and how to get to it from any location</p>
+                    </a>
+                </div>
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content network">
+                                <i class="networker_cap">Networker</i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/002-handshake.png" class="img-responsive icon" alt="handshake">
+                        <p class="cellTitle">Networker</p>
+                        <p class="oneLine">Make following up with networking contacts easy</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:laurapetitt@gmail.com?Subject=Portfolio%20Response" class="redTxt makeBig">CONTACT ME</a> -->
+                    <!-- <hr class="star-primary"> -->
+                <!-- </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-12">
+                        <h3 id="contact">Find me on the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="mailto:laurapetitt@gmail.com?Subject=Portfolio%20Response"class="btn-social btn-outline" target="_blank"><span class="sr-only">Email</span><i class="fa fa-fw fa-envelope-o"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/lauraebatson" class="btn-social btn-outline" target="_blank"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/laurabatson/" class="btn-social btn-outline" target="_blank"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/lulubun/" class="btn-social btn-outline" target="_blank"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 small-row">
+                      <p class="small">Icons designed by Freepik, Vectors Market, and Madebyoliver from Flaticon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><a href="https://workday-weather.herokuapp.com/" target="_blank">Workday Weather</a></h2>
+                            <hr class="star-primary">
+                            <a href="https://workday-weather.herokuapp.com/" target="_blank"><img src="img/portfolio/responsiveWeather2.png" class="modalImage img-centered" alt=""></a>
+                            <p>If you check the weather frequently, you are probably aware of how frustrating and bloated the popular weather websites are. I spend a lot of time outside and I like to be prepared. I decided to build this app to make accessing my basic local weather forecast quick and easy (the default city is even my hometown so it’s extra quick for me!). I utilized the Weather Underground API for my information and the Material UI library to make my UI/UX streamlined. </p>
+                            <p>
+                              <i class="devicon devicon-react-original-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Capstone:
+                                    <strong>React</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>March 2017
+                                    </strong>
+                                </li>
+                            </ul>
+                            <a href="https://workday-weather.herokuapp.com/" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> Live</button></a>
+                            <a href="https://github.com/lulubun/weather_recommendations" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> GitHub</button></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><a href="https://tealog.herokuapp.com/" target="_blank">Aficionado: A Tea Log</a></h2>
+                            <hr class="star-primary">
+                            <a href="https://tealog.herokuapp.com/" target="_blank"><img src="img/portfolio/responsiveTea2.png" class="modalImage img-centered" alt=""></a>
+                            <p>One of the best ways to become an expert on something you enjoy is to journal about your experiences with it to compare and contrast. This is a well known technique for those who wish to become more knowledgeable about wine. I personally don’t care for wine, but I love tea and my original idea for this project was to create a journal that can be customized to record any experience including tea tastings, wine, and beyond. To keep this project to scale in the limited time I had during bootcamp, I focused on making this a digital diary for tea. I hope to scale the project up in the future to help document all types of experience. </p>
+                            <p>
+                              <i class="devicon devicon-nodejs-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-javascript-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-mongodb-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Capstone:
+                                    <strong>Server-side Programming</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>February 2017
+                                    </strong>
+                                </li>
+                            </ul>
+                            <a href="https://tealog.herokuapp.com" target="_blank"/><button type="button" class="btn btn-default"><i class="fa"></i> Live</button></a>
+                            <a href="https://github.com/lulubun/Tealog" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> GitHub</button></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><a href="https://lulubun.github.io/ArtMap/" target="_blank">Art Map</a></h2>
+                            <hr class="star-primary">
+                            <a href="https://lulubun.github.io/ArtMap/" target="_blank"><img src="img/portfolio/responsiveArt2.png" class="modalImage img-centered" alt=""></a>
+                            <p>This was my first official capstone project I completed at bootcamp. After a few false starts where I learned more about APIs and what makes them good to work with, I decided to create a map that helps you find local art galleries to visit wherever you happen to be. I used Google Map’s API for geolocation and Google Places to find information about galleries. To add more to this project, I returned recently and updated the project to include available driving directions to each location.</p>
+                            <p>
+                              <i class="devicon devicon-javascript-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Capstone:
+                                    <strong>Frontend Web Development</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>December 2016
+                                    </strong>
+                                </li>
+                            </ul>
+                            <a href="https://lulubun.github.io/ArtMap/" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> Live</button></a>
+                            <a href="https://github.com/lulubun/ArtMap" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> GitHub</button></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2><a href="https://be-a-networker.herokuapp.com/" target="_blank">Networker</a></h2>
+                            <hr class="star-primary">
+                            <a href="https://be-a-networker.herokuapp.com/" target="_blank"><img src="img/portfolio/responsiveNetwork2.png" class="modalImage img-centered" alt=""></a>
+                            <p>For my final capstone, I decided to work on a project that could be helpful in my job search. The idea of this is a CRM software app that focuses on networking with contacts. Having one place for contact information, notes about meetings and follow-ups, and sorting and scheduling capabilities help keep your professional network manageable. I’ve included functionality to push followup reminders to a personal calendar. I’ve also implemented secure login functionality. While I currently only have contacts included in this app, I want to add on a job search category that would allow a user to keep their job hunt organized as well.</p>
+                            <p>
+                              <i class="devicon devicon-nodejs-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon-sourcetree-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-mongodb-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-heroku-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-react-original-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-javascript-plain colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-jquery-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-html5-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-css3-plain-wordmark colored" style="font-size: 4em;"></i>
+                              <i class="devicon devicon-github-plain-wordmark colored" style="font-size: 4em;"></i>
+                            </p>
+                            <ul class="list-inline item-details">
+                                <li>Capstone:
+                                    <strong>Frontend Web Development</strong>
+                                </li>
+                                <li>Date:
+                                    <strong>December 2016
+                                    </strong>
+                                </li>
+                            </ul>
+                            <a href="https://be-a-networker.herokuapp.com/" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> Live</button></a>
+                            <a href="https://github.com/lulubun/networker" target="_blank"><button type="button" class="btn btn-default"><i class="fa"></i> GitHub</button></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
 </html>
