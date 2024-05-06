@@ -148,10 +148,31 @@ header .intro-text .skills {
 }
 
 #portfolio .portfolio-item {
-
-  margin: auto;
-
+  display: flex;
+  align-items: center;
+  margin: 3em 0;
 }
+
+#portfolio .portfolio-text {
+  margin-left: 2rem
+}
+
+.heroku-style {
+  height: 1em;
+  padding-right: .2em;
+  margin-bottom: 3px;
+}
+
+.internal-link-style {
+  /* display: flex;
+  align-items: center; */
+  color: rgb(44, 62, 80);
+}
+
+.internal-link-style:hover {
+  color: #F0544F;
+}
+
 #portfolio .portfolio-item .portfolio-link {
   margin: auto;
   max-width: 125px;
