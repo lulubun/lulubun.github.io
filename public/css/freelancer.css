@@ -10,7 +10,9 @@ body {
 
 p {
   font-size: 20px;
+  margin-left: 10px;
 }
+
 p.small {
   font-size: 8px;
   opacity: 0.1;
@@ -149,7 +151,7 @@ header .intro-text .skills {
 
 #portfolio .portfolio-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 3em 0;
 }
 
@@ -578,6 +580,16 @@ a.makeBig:hover{
 }
 
 
+.split {
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding-bottom: 1em;
+  /* float: left; */
+}
+
+
 @media (min-width: 769px) {
   header .container {
     padding-top: 200px;
@@ -590,12 +602,6 @@ a.makeBig:hover{
     font-size: 1.75em;
   }
 
-  .split {
-    justify-content: space-evenly;
-    display: flex;
-    align-items: center;
-    /* float: left; */
-  }
 
   .one {
     /*float: left;*/
@@ -662,6 +668,10 @@ section.success {
     width: 60%;
   }
 
+  .topRow {
+    flex-direction: column;
+  }
+
   .two, .three, .four {
     padding-top: 30px;
   }
@@ -675,11 +685,16 @@ section.success {
 }
 
 .iconsStyle {
-  font-size: 5em !important;
+  font-size: 3em;
   padding-right: 6px;
   padding-left: 6px;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.largeIcon {
+  font-size: 7em;
+  padding-bottom: .5em;
 }
 
 @media (max-width: 1039px) {
